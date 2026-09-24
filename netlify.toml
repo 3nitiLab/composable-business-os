@@ -1,0 +1,25 @@
+# Netlify config for the small-business dashboard.
+# Local:  npx netlify-cli dev      -> http://localhost:8888
+# Deploy: npx netlify-cli deploy --prod
+
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[dev]
+  publish = "public"
+  port = 8888
+  framework = "#static"
+
+# Clean API paths: /api/metrics -> /.netlify/functions/metrics
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,14 @@
+{
+  "name": "sb-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small-business operations dashboard - Netlify static + functions starter",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy": "netlify deploy --prod"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.38.0"
+  }
+}

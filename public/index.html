@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business OS Studio</title>
+<meta name="description" content="Pick the modules your business actually needs, preview the app, export the build spec.">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/studio.css">
+<script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch{}</script>
+</head>
+<body>
+<div class="studio">
+  <header class="studio-top">
+    <div class="brand">
+      <div class="mark">3L</div>
+      <div><b>Business OS Studio</b><span>Compose it, preview it, ship the spec</span></div>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn" id="theme">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      Theme
+    </button>
+  </header>
+
+  <div class="studio-body">
+    <main class="studio-main">
+      <div class="intro">
+        <h1>What should your Business OS do?</h1>
+        <p>Tick the modules you want. Dependencies are pulled in automatically — you can&rsquo;t have an AI inbox assistant without an inbox. Everything here is yours to edit in <code>public/modules.js</code>.</p>
+      </div>
+
+      <div class="setup card">
+        <label>Business name
+          <input id="bizName" type="text" value="3nitiLab" autocomplete="off">
+        </label>
+        <label>Target stack
+          <select id="stack">
+            <option value="lovable">Lovable (React + Vite + Supabase)</option>
+            <option value="next">Next.js + Prisma</option>
+            <option value="static">Static + Netlify Functions</option>
+          </select>
+        </label>
+        <div class="presets">
+          <span>Start from:</span>
+          <button class="btn sm" data-preset="lean">Lean</button>
+          <button class="btn sm" data-preset="medspa">Med spa</button>
+          <button class="btn sm" data-preset="services">Home services</button>
+          <button class="btn sm" data-preset="all">Everything</button>
+        </div>
+      </div>
+
+      <div id="catalog"></div>
+    </main>
+
+    <aside class="studio-side">
+      <div class="card sticky">
+        <header><h2>Your build</h2></header>
+        <div class="summary" id="summary"></div>
+        <div class="side-actions">
+          <a class="btn primary" id="previewBtn" href="/app.html" target="_blank" rel="noopener">Preview the app &rarr;</a>
+          <button class="btn" id="copyBtn">Copy Lovable prompt</button>
+          <button class="btn" id="downloadBtn">Download spec &amp; config</button>
+        </div>
+        <details class="spec">
+          <summary>Generated spec</summary>
+          <pre id="specOut" class="skeleton">&nbsp;</pre>
+        </details>
+      </div>
+    </aside>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/studio.js"></script>
+</body>
+</html>

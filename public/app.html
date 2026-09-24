@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Operations Dashboard</title>
+<meta name="description" content="Composed Business OS preview - only the modules you picked.">
+<link rel="stylesheet" href="/styles.css">
+<script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch{}</script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">3L</div>
+      <div><b id="bizName">Business OS</b><span>Operations</span></div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <footer>Composed in <a href="/">Studio</a> &middot; data via <code>/api/metrics</code></footer>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1>Good morning, Natalia</h1>
+        <p id="asof">Loading&hellip;</p>
+      </div>
+      <div class="spacer"></div>
+      <div class="segmented" role="group" aria-label="Date range">
+        <button data-range="30d">30d</button>
+        <button data-range="90d">90d</button>
+        <button data-range="6m" aria-pressed="true">6m</button>
+        <button data-range="12m">12m</button>
+      </div>
+      <button class="btn" id="theme" aria-label="Toggle dark mode">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        Theme
+      </button>
+      <a class="btn primary" href="/">&larr; Back to Studio</a>
+    </div>
+    <div id="content"></div>
+  </main>
+</div>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

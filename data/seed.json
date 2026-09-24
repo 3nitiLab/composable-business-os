@@ -1,0 +1,320 @@
+{
+  "business": {
+    "name": "Northside Med Spa",
+    "owner": "Natalia",
+    "currency": "USD"
+  },
+  "kpis": [
+    {
+      "id": "revenue",
+      "label": "Revenue (MTD)",
+      "value": 48250,
+      "format": "money",
+      "delta": 12.4,
+      "target": 55000
+    },
+    {
+      "id": "bookings",
+      "label": "Bookings",
+      "value": 186,
+      "format": "number",
+      "delta": 8.1,
+      "target": 210
+    },
+    {
+      "id": "newleads",
+      "label": "New leads",
+      "value": 64,
+      "format": "number",
+      "delta": -4.2,
+      "target": 80
+    },
+    {
+      "id": "showrate",
+      "label": "Show rate",
+      "value": 91.5,
+      "format": "percent",
+      "delta": 2.7,
+      "target": 95
+    }
+  ],
+  "revenueSeries": [
+    {
+      "label": "Apr",
+      "revenue": 31200,
+      "expenses": 19800
+    },
+    {
+      "label": "May",
+      "revenue": 34800,
+      "expenses": 20400
+    },
+    {
+      "label": "Jun",
+      "revenue": 33100,
+      "expenses": 21600
+    },
+    {
+      "label": "Jul",
+      "revenue": 41500,
+      "expenses": 22900
+    },
+    {
+      "label": "Aug",
+      "revenue": 44900,
+      "expenses": 24100
+    },
+    {
+      "label": "Sep",
+      "revenue": 48250,
+      "expenses": 24800
+    }
+  ],
+  "channels": [
+    {
+      "label": "Google Business Profile",
+      "value": 38
+    },
+    {
+      "label": "Instagram",
+      "value": 24
+    },
+    {
+      "label": "Referral",
+      "value": 19
+    },
+    {
+      "label": "Website form",
+      "value": 12
+    },
+    {
+      "label": "Walk-in",
+      "value": 7
+    }
+  ],
+  "appointments": [
+    {
+      "time": "09:00",
+      "client": "Dana R.",
+      "service": "Consultation",
+      "staff": "Alex",
+      "status": "confirmed"
+    },
+    {
+      "time": "10:30",
+      "client": "Marcus T.",
+      "service": "Follow-up",
+      "staff": "Alex",
+      "status": "confirmed"
+    },
+    {
+      "time": "12:00",
+      "client": "Priya S.",
+      "service": "Treatment A",
+      "staff": "Jo",
+      "status": "pending"
+    },
+    {
+      "time": "14:15",
+      "client": "Chen W.",
+      "service": "Treatment B",
+      "staff": "Jo",
+      "status": "confirmed"
+    },
+    {
+      "time": "16:00",
+      "client": "Ellis B.",
+      "service": "Consultation",
+      "staff": "Alex",
+      "status": "cancelled"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-1042",
+      "client": "Dana R.",
+      "amount": 1850,
+      "due": "2026-09-26",
+      "status": "paid"
+    },
+    {
+      "id": "INV-1041",
+      "client": "Chen W.",
+      "amount": 940,
+      "due": "2026-09-28",
+      "status": "sent"
+    },
+    {
+      "id": "INV-1039",
+      "client": "Priya S.",
+      "amount": 2400,
+      "due": "2026-09-15",
+      "status": "overdue"
+    },
+    {
+      "id": "INV-1038",
+      "client": "Marcus T.",
+      "amount": 620,
+      "due": "2026-10-02",
+      "status": "draft"
+    },
+    {
+      "id": "INV-1036",
+      "client": "Ellis B.",
+      "amount": 1275,
+      "due": "2026-09-10",
+      "status": "paid"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Reply to 3 new GBP reviews",
+      "due": "today",
+      "done": false
+    },
+    {
+      "title": "Send September re-booking blast",
+      "due": "tomorrow",
+      "done": false
+    },
+    {
+      "title": "Chase INV-1039 (14 days overdue)",
+      "due": "today",
+      "done": false
+    },
+    {
+      "title": "Restock consumables",
+      "due": "Fri",
+      "done": true
+    }
+  ],
+  "activity": [
+    {
+      "when": "8m ago",
+      "text": "Priya S. booked Treatment A for Sep 26"
+    },
+    {
+      "when": "42m ago",
+      "text": "Payment received - INV-1042, $1,850"
+    },
+    {
+      "when": "2h ago",
+      "text": "New 5-star review on Google Business Profile"
+    },
+    {
+      "when": "5h ago",
+      "text": "Ellis B. cancelled 16:00 consultation"
+    },
+    {
+      "when": "1d ago",
+      "text": "Website form: 4 new leads captured"
+    }
+  ],
+  "pipeline": [
+    {
+      "stage": "New lead",
+      "count": 24,
+      "value": 38400
+    },
+    {
+      "stage": "Contacted",
+      "count": 17,
+      "value": 29200
+    },
+    {
+      "stage": "Consult booked",
+      "count": 11,
+      "value": 21800
+    },
+    {
+      "stage": "Proposal sent",
+      "count": 6,
+      "value": 15600
+    },
+    {
+      "stage": "Won",
+      "count": 4,
+      "value": 9400
+    }
+  ],
+  "conversations": [
+    {
+      "channel": "SMS",
+      "who": "Priya S.",
+      "preview": "Can I move my Friday appt to 2pm?",
+      "when": "4m",
+      "unread": true
+    },
+    {
+      "channel": "Instagram",
+      "who": "@marcus.t",
+      "preview": "Do you offer packages?",
+      "when": "22m",
+      "unread": true
+    },
+    {
+      "channel": "Email",
+      "who": "Dana R.",
+      "preview": "Thanks - invoice received.",
+      "when": "1h",
+      "unread": false
+    },
+    {
+      "channel": "Web chat",
+      "who": "Visitor 8812",
+      "preview": "What are your hours today?",
+      "when": "3h",
+      "unread": false
+    }
+  ],
+  "reviews": {
+    "average": 4.8,
+    "total": 212,
+    "newThisMonth": 9,
+    "breakdown": [
+      {
+        "stars": 5,
+        "count": 168
+      },
+      {
+        "stars": 4,
+        "count": 29
+      },
+      {
+        "stars": 3,
+        "count": 9
+      },
+      {
+        "stars": 2,
+        "count": 4
+      },
+      {
+        "stars": 1,
+        "count": 2
+      }
+    ],
+    "unanswered": 3
+  },
+  "automations": [
+    {
+      "name": "Missed-call text-back",
+      "runs": 142,
+      "status": "on"
+    },
+    {
+      "name": "No-show follow-up",
+      "runs": 38,
+      "status": "on"
+    },
+    {
+      "name": "Review request after visit",
+      "runs": 96,
+      "status": "on"
+    },
+    {
+      "name": "90-day re-book nudge",
+      "runs": 0,
+      "status": "draft"
+    }
+  ]
+}
