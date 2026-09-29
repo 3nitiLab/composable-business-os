@@ -30,6 +30,14 @@ function load() {
     if (Array.isArray(cfg.modules) && cfg.modules.length) state.picked = new Set(cfg.modules);
   } catch {}
 }
+/* A link can carry a selection: #business=Name&stack=lovable&modules=contacts,forms */
+function loadFromHash() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  if (p.has("business")) state.business = p.get("business");
+  if (p.has("stack")) state.stack = p.get("stack");
+  const ids = (p.get("modules") || "").split(",").filter(id => byId[id]);
+  if (ids.length) state.picked = new Set(ids);
+}
 
 /* ---------- catalog ---------- */
 function renderCatalog() {
@@ -169,6 +177,7 @@ function wire() {
 }
 
 load();
+loadFromHash();
 renderCatalog();
 wire();
 sync();
