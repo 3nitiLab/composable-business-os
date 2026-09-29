@@ -1,0 +1,47 @@
+{
+  "owner": "Sam Rivera",
+  "business": "Rivera Plumbing",
+  "about": "Three-van plumbing outfit in Tacoma.",
+  "entity": "customers",
+  "status": "quoted",
+  "website": "builder",
+  "website_tool": "Wix",
+  "enquiry_path": "mailto",
+  "enquiry_fields": [
+    "the job type",
+    "the address",
+    "how urgent"
+  ],
+  "site_label": "services",
+  "site_pages": [
+    "services",
+    "service area"
+  ],
+  "repeat_topics": [
+    "prices",
+    "emergency call-outs"
+  ],
+  "ai_guardrail": true,
+  "channels": [
+    "sms",
+    "phone",
+    "email"
+  ],
+  "records_today": [],
+  "stages": [],
+  "history_sources": [],
+  "packet": [],
+  "payment_routes": [],
+  "staff_admin": [],
+  "booking": [],
+  "scoring": [],
+  "content": [],
+  "keep_tools": [],
+  "replace_tools": [],
+  "languages": [
+    "English"
+  ],
+  "phone": true,
+  "extra_pains": [],
+  "later": []
+}
